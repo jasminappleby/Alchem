@@ -1,0 +1,12 @@
+{
+  "name": "alchem",
+  "version": "1.0.0",
+  "description": "## Task  Below is a system diagram of a three-tier architecture with some additional components. The system is performing badly and, as a company, we would like to have more visibility of what is happening across the system. Each system component has information inside it that we would like to collate and exploit for user analysis and diagnostics, leading to better understanding of customer and system behaviour.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
