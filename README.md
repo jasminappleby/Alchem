@@ -22,7 +22,7 @@ in a database
 2. [ ] Create an API (or openAPI specification) which can be polled by your management
 console
 3. [ ] A simple one table database (repository) to hold some event data
-4. [X] A simple simulator that generates events to update your table
+4. [ ] A simple simulator that generates events to update your table
 5. [ ] A simple test to prove that your solution works end to end
 
 ### Reminder
