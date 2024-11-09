@@ -18,7 +18,7 @@
 
 - I have downloaded version Angular 18.2.11, and I kept getting errors using HttpClientModule because it was deprecated. I made my way through Angular documentation but I got confused as to where it needed to be implemented based on if you were using standalone components or SSR. 
 
-- Whilst I did implement the API calls, the HttpClientModule was not correctly set up in my standalone component, leading to errors in dependency injection. The SSR implementation was also adding extra complications to this because I do't think it likes standalone components.
+- Whilst I did implement the API calls, the HttpClientModule was not correctly set up in my standalone component, leading to errors in dependency injection. The SSR implementation was also adding extra complications to this because I don't think it works with standalone components.
 
 
 
