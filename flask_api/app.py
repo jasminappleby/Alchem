@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jasmin:yourpassword@localhost:5432/database'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jasmin:password@localhost:5432/database'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -68,8 +68,8 @@ def add_event():
 @app.before_request
 def create_sample_data():
     if Event.query.count() == 0:
-        db.session.add(Event(object_id="obj_1", status="Active", timestamp="2024-11-07 10:00:00"))
-        db.session.add(Event(object_id="obj_2", status="Inactive", timestamp="2024-11-07 10:10:00"))
+        db.session.add(Event(object_id="obj1", status="Active", timestamp="2024-11-07 10:00:00"))
+        db.session.add(Event(object_id="obj2", status="Inactive", timestamp="2024-11-07 10:10:00"))
         db.session.commit()
 
 if __name__ == '__main__':

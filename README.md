@@ -17,9 +17,9 @@ understanding of customer and system behaviour.
 - Functional layers can be developed and deployed in the micro service architecture
 
 ### The Objective
-1. [ ] Create a simple management console which can auto refresh the status of an object
+1. [X] Create a simple management console which can auto refresh the status of an object
 in a database
-2. [ ] Create an API (or openAPI specification) which can be polled by your management
+2. [X] Create an API (or openAPI specification) which can be polled by your management
 console
 3. [X] A simple one table database (repository) to hold some event data
 4. [ ] A simple simulator that generates events to update your table
