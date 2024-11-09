@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ManagementConsoleService } from './management-console.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ObjectStatus } from '../models/object-status.model';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-management-console',
     standalone: true,
-    imports: [],
+    imports: [CommonModule, HttpClientModule],
     templateUrl: './management-console.component.html',
     styleUrl: './management-console.component.css'
 })
