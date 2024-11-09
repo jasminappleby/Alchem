@@ -19,7 +19,6 @@
 - Verify DB is refreshing correctly (API)
 - Verify DB is displaying refreshed content
 
-
 ## Stack
 - Angular
 - REST API using Flask

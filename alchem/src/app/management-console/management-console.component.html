@@ -1,3 +1,23 @@
-<main>
-    <p>management-console works!</p>
-</main>
+<div class="container">
+    <h1>Management Console</h1>
+    
+    <p>Table of data which refreshes every 10 seconds...</p>
+    </br>
+    <div *ngIf="error" class="error">{{ error }}</div>
+        <table *ngIf="objectStatus && objectStatus.length > 0" class="status-table">
+            <thead>
+                <tr>
+                    <th>Object ID</th>
+                    <th>Status</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let status of objectStatus">
+                    <td>{{ status.object_id }}</td>
+                    <td>{{ status.status }}</td>
+                    <td>{{ status.timestamp }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

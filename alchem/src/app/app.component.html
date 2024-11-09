@@ -4,6 +4,13 @@
 <main class="main">
 	<h1>Hello</h1>
 	<p>Congratulations! Your app is running. 🎉</p>
-	<app-management-console></app-management-console>
+	<!-- <app-management-console></app-management-console> -->
+	<nav>
+		<a routerLink="/management-console" routerLinkActive="active">Management Console</a>
+		<a routerLink="/simulator" routerLinkActive="active">Simulator</a>
+	</nav>
+	  
 </main>
 
+<router-outlet></router-outlet>
+  

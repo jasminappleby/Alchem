@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Add Data</h1>
+    <p>Use the below form to add new data into the database</p>
+    
+    <form (ngSubmit)="addEvent()">
+        <label for="objectId">Object ID:</label>
+        <input type="text" id="objectId" [(ngModel)]="newObjectId" name="objectId" required>
+        
+        <label for="status">Status:</label>
+        <input type="text" id="status" [(ngModel)]="newStatus" name="status" required>
+        
+        <button type="submit">Add Event</button>
+    </form>
+    
+    <p>(Timestamp will be added to the DB along with your ID and status as you submit the above form)</p>
+</div>
